@@ -1,0 +1,152 @@
+paths:
+  tags:
+    name: Task
+    description: Task management and retrieval
+
+  /tasks:
+    post:
+      summary: Create a Task
+      description: Logged in users with roles regular and admin can create a task.
+      tags: [Task]
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: Task title
+                description:
+                  type: string
+                  description: task description
+                priority:
+                  type: string
+                  description: task priority
+                  enum: ['low', 'medium', 'high']
+                dueDate:
+                  type: string
+                  format: date-time
+                  description: task due date
+                status:
+                  type: string
+                  description: task status
+                  enum: ['To Do', 'In Progress', 'Done' , 'In Review','Recheck','Move To QA']
+                assignee:
+                  type: string
+                  description: user assignee object id
+                assignedTo:
+                  type: string
+                  description: user assignedTo object id
+              example:
+                title: fake title
+                description: fake description
+                priority: low
+                dueDate: 2021-05-05T14:48:00.000Z
+                status: To Do
+                assignee: 60a7b1b3e4b9a3b8c8a4b8a1
+                assignedTo: 60a7b1b3e4b9a3b8c8a4b8a1
+              required:
+                - content
+                - newsletter
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  /tasks/{id}:
+    patch:
+      summary: Update a Task
+      description: Only the Content of a newsletter can be updated.
+      tags: [Task]
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: Newsletter id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+              example:
+                content: fake content
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+    get:
+      summary: get a Task
+      description: Only the Content of a newsletter can be updated.
+      tags: [Task]
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: task id
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+    
+    delete:
+      summary: Delete a task
+      description: Only user with admin role can delete the task
+      tags: [Task]
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: Newsletter id
+      responses:
+        '200':
+          description: No content
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
