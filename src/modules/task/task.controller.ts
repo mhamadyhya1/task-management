@@ -3,6 +3,8 @@ import { Request, Response } from 'express';
 import mongoose from 'mongoose';
 import catchAsync from '../utils/catchAsync';
 import * as TaskService from './task.service';
+import pick from '../utils/pick';
+import { IOptions } from '../paginate/paginate';
 
 export const createTask = catchAsync(async (req: Request, res: Response) => {
   const Task = await TaskService.createTask(req.body);
@@ -28,9 +30,9 @@ export const getTask = catchAsync(async (req: Request, res: Response) => {
 });
 
 export const getTasks = catchAsync(async (req: Request, res: Response) => {
-  const filter = req.query;
-  const options = req.query;
-  const result = await TaskService.queryTasks(filter, options);
+  const filter = pick(req.query, ['title', 'prirority', 'status']);
+  const options: IOptions = pick(req.query, ['limit', 'page']);
+  const result = await TaskService.queryTasks(filter, options,req.user);
   res.status(httpStatus.OK).send(result);
 });
 

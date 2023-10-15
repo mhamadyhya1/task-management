@@ -1,18 +1,14 @@
 {
-  "name": "create-nodejs-ts-app",
+  "name": "task_management",
   "version": "3.0.9",
   "description": "Node express mongoose typescript boilerplate",
   "main": "dist/index.js",
-  "bin": "bin/createNodetsApp.cjs",
-  "repository": "https://github.com/saisilinus/node-express-mongoose-typescript-boilerplate.git",
-  "bugs": {
-    "url": "https://github.com/saisilinus/node-express-mongoose-typescript-boilerplate/issues"
-  },
-  "author": "linus wafula saisi <saisilinus.work@gmail.com>",
+  "repository": "https://github.com/mhamadyhya1/task-management",
+  "author": "Mohammad Yahya",
   "license": "MIT",
   "type": "module",
   "engines": {
-    "node": ">=14.20.1 <19"
+    "node": ">=16.20 <20"
   },
   "scripts": {
     "start": "pm2 start ecosystem.config.json --no-daemon",
@@ -130,10 +126,5 @@
     "validator": "^13.7.0",
     "winston": "^3.3.3",
     "xss-clean": "^0.1.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
-    }
   }
 }

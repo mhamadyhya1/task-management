@@ -2,7 +2,8 @@
 import { Schema, Document, Model } from 'mongoose';
 
 export interface QueryResult {
-  results: Document[];
+  [x: string]: any;
+  results: Document[] | [];
   page: number;
   limit: number;
   totalPages: number;
@@ -12,9 +13,10 @@ export interface QueryResult {
 export interface IOptions {
   sortBy?: string;
   projectBy?: string;
-  populate?: string;
+  populate?: string | { path: string; select?: string; options?: any }[];
   limit?: number;
   page?: number;
+  checkNonexistentField?: string;
 }
 
 const paginate = <T extends Document, U extends Model<U>>(schema: Schema<T>): void => {
@@ -34,6 +36,7 @@ const paginate = <T extends Document, U extends Model<U>>(schema: Schema<T>): vo
    * @param {string} [options.populate] - Populate data fields. Hierarchy of fields should be separated by (.). Multiple populating criteria should be separated by commas (,)
    * @param {number} [options.limit] - Maximum number of results per page (default = 10)
    * @param {number} [options.page] - Current page (default = 1)
+   * @param {Object} [options.projection] - Fields to hide or include (default = '')
    * @param {string} [options.projectBy] - Fields to hide or include (default = '')
    * @returns {Promise<QueryResult>}
    */
@@ -68,18 +71,19 @@ const paginate = <T extends Document, U extends Model<U>>(schema: Schema<T>): vo
 
     const countPromise = this.countDocuments(filter).exec();
     let docsPromise = this.find(filter).sort(sort).skip(skip).limit(limit).select(project);
-
-    if (options.populate) {
-      options.populate.split(',').forEach((populateOption: any) => {
-        docsPromise = docsPromise.populate(
-          populateOption
-            .split('.')
-            .reverse()
-            .reduce((a: string, b: string) => ({ path: b, populate: a }))
-        );
-      });
+    if (options.checkNonexistentField) {
+      docsPromise = docsPromise.where({ [options.checkNonexistentField]: { $exists: false } });
     }
-
+    if (options.populate) {
+      if (typeof options.populate === 'string') {
+        docsPromise = docsPromise.populate(options.populate);
+      } else {
+        docsPromise = docsPromise.populate(options.populate.map((populateOption) => {
+          const { path, select, options } = populateOption;
+          return populateOption.select ? { path, select, options } : path;
+        }));
+      }
+    }
     docsPromise = docsPromise.exec();
 
     return Promise.all([countPromise, docsPromise]).then((values) => {

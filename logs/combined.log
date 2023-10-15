@@ -1,4 +1,27 @@
 [32minfo[39m: Connected to MongoDB
 [32minfo[39m: Listening to port 8080
-[32minfo[39m: POST /v1/auth/login 200 - 77.528 ms
-[32minfo[39m: POST /v1/auth/login 200 - 42.168 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+info: users: {
+  name: 'Emiliano',
+  email: 'loma.crist@gmail.com',
+  password: 'password123',
+  role: 'regular',
+  isEmailVerified: false,
+  _id: new ObjectId("652c69b305513a7e6500bd27"),
+  __v: 0,
+  createdAt: 2023-10-15T22:37:39.842Z,
+  updatedAt: 2023-10-15T22:37:39.842Z
+},{
+  name: 'Mattie Harber',
+  email: 'king.jacobi@hotmail.com',
+  password: 'adminPassword123',
+  role: 'admin',
+  isEmailVerified: false,
+  _id: new ObjectId("652c69b305513a7e6500bd28"),
+  __v: 0,
+  createdAt: 2023-10-15T22:37:39.842Z,
+  updatedAt: 2023-10-15T22:37:39.842Z
+}

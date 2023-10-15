@@ -23,15 +23,15 @@ export const createUser = async (userBody: NewCreatedUser): Promise<IUserDoc> =>
  * @returns {Promise<IUserDoc>}
  */
 export const registerUser = async (userBody: NewRegisteredUser): Promise<IUserDoc> => {
-  const usersCount = await User.countDocuments();
-  let updatedBody = userBody;
-  if(usersCount==0){
-    updatedBody = {...userBody, role: 'admin'}
-  }
+  // const usersCount = await User.countDocuments();
+  // let updatedBody = userBody;
+  // if(usersCount==0){
+  //   updatedBody = {...userBody, role: 'admin'}
+  // }
   if (await User.isEmailTaken(userBody.email)) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Email already taken');
   }
-  return User.create(updatedBody);
+  return User.create(userBody);
 };
 
 /**

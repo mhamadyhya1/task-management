@@ -1,0 +1,14 @@
+[31merror[39m: Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/application.js:618:24)
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/index.js:8:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/application.js:618:24)
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/index.js:8:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

@@ -24,16 +24,24 @@ export const createTask = async (TaskBody: NewCreatedTask): Promise<ITaskDoc> =>
 
 /**
  * Query for Tasks
+ * if user is regular , query for Tasks that assigned to him or created by him
+ * assignee and assignedTo are populated with name
  * @param {Object} filter - Mongo filter
  * @param {Object} options - Query options
  * @returns {Promise<QueryResult>}
  */
 export const queryTasks = async (
   filter: Record<string, any>,
-  options: IOptions
+  options: IOptions,
+  user:IUserDoc
 ): Promise<QueryResult> => {
-  const updatedFilter = { ...filter };
-  const Tasks = await Task.paginate(updatedFilter, options);
+  let updatedFilter = { ...filter };
+  if(user.role==='regular')
+  {
+    updatedFilter ={ ...filter,$or:[{assignee:user.id},{assignedTo:user.id}]};
+  }
+  let updatedOptions:IOptions = { ...options, populate: [{path:'assignee','select':'email'},{path:'assignedTo','select':'name'}] };
+  const Tasks = await Task.paginate(updatedFilter, updatedOptions);
   return Tasks;
 };
 
@@ -45,10 +53,10 @@ export const queryTasks = async (
  */
 export const getTaskById = async (id: mongoose.Types.ObjectId, user?: IUserDoc | null): Promise<ITaskDoc | null> => {
   if (!user) return Task.findById(id);
-  return user.role === 'user'
+  return user.role === 'regular'
     ? Task.findOne({
         _id: id,
-        user: user.id,
+        $or: [{ assignee: user.id }, { assignedTo: user.id }],
       })
     : Task.findOne({ _id: id });
 };
