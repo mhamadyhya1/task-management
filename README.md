@@ -11,6 +11,7 @@ Here're some of the project's best features:
 *   Crud Task Management
 *   Swagger for API Documentation
 *   Api Audit log files integrated
+*   rate limit for apis
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -32,7 +33,7 @@ yarn install
 yarn run dev
 ```
 
-<p>4. Run Project for production</p>
+<p>4. Start Project in production mode</p>
 
 ```
 yarn run start:build
