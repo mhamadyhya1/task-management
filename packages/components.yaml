@@ -65,8 +65,6 @@ components:
       properties:
         access:
           $ref: '#/components/schemas/Token'
-        refresh:
-          $ref: '#/components/schemas/Token'
 
     UserWithTokens:
       type: object

@@ -6,6 +6,7 @@ import { IOptions, QueryResult } from '../paginate/paginate';
 import { NewCreatedTask, UpdateTaskBody, ITaskDoc } from './task.interface';
 import { IUserDoc } from '../user/user.interfaces';
 import { User } from '../user';
+import { redisClient } from '../utils/redisCache';
 
 /**
  * check if Task exists , if not throw not found error
@@ -18,7 +19,9 @@ export const createTask = async (TaskBody: NewCreatedTask): Promise<ITaskDoc> =>
   if (!checkAssignedToExists) {
     throw new ApiError(httpStatus.NOT_FOUND, 'AssignedTo not found');
   } else {
-    return Task.create(TaskBody);
+    const task =  Task.create(TaskBody);
+    await redisClient.del('cached_tasks_document');
+    return task;
   }
 };
 
@@ -26,6 +29,7 @@ export const createTask = async (TaskBody: NewCreatedTask): Promise<ITaskDoc> =>
  * Query for Tasks
  * if user is regular , query for Tasks that assigned to him or created by him
  * assignee and assignedTo are populated with name
+ * apply cache to query result
  * @param {Object} filter - Mongo filter
  * @param {Object} options - Query options
  * @returns {Promise<QueryResult>}
@@ -40,8 +44,13 @@ export const queryTasks = async (
   {
     updatedFilter ={ ...filter,$or:[{assignee:user.id},{assignedTo:user.id}]};
   }
+  const cachedData = await redisClient.get('cached_tasks_document');
+  if (cachedData) {
+    return JSON.parse(cachedData);
+  }
   let updatedOptions:IOptions = { ...options, populate: [{path:'assignee','select':'email'},{path:'assignedTo','select':'name'}] };
   const Tasks = await Task.paginate(updatedFilter, updatedOptions);
+  await redisClient.set('cached_tasks_document', JSON.stringify(Tasks), 'EX', 3600);
   return Tasks;
 };
 

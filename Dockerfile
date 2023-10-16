@@ -14,6 +14,5 @@ RUN yarn install
 ENV NODE_ENV development
 
 EXPOSE 6080
-
 # Cmd script
 CMD ["yarn", "run", "dev"]

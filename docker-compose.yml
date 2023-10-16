@@ -9,8 +9,50 @@ services:
     ports:
       - "8080:8080"
     environment:
-      MONGODB_URL: mongodb+srv://shareb_Admin:d5KpJeuyNTtYM4D1@shareb.5wqep8o.mongodb.net/sharebDBTest
+      MONGODB_URL: mongodb://mongodb:27017/task-management
+      PORT: 8080
+      JWT_SECRET: thisisasamplesecret
+      JWT_ACCESS_EXPIRATION_MINUTES: 30
+      JWT_REFRESH_EXPIRATION_DAYS: 3
+
     volumes:
       - ./:/app
       - /app/node_modules
     restart: unless-stopped
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"  # Rotate log file when it reaches 10MB
+        max-file: "3"     # Keep 3 rotated log files
+    restart: unless-stopped
+  redis:
+    image: "redis:latest"
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    restart: unless-stopped
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongodb
+      ME_CONFIG_MONGODB_AUTH_USERNAME: admin
+      ME_CONFIG_MONGODB_AUTH_PASSWORD: pass
+    restart: unless-stopped
+volumes:
+  redis_data:
+  mongodb_data:

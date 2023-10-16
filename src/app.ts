@@ -12,7 +12,6 @@ import { jwtStrategy } from './modules/auth';
 import { authLimiter } from './modules/utils';
 import { ApiError, errorConverter, errorHandler } from './modules/errors';
 import routes from './routes/v1';
-
 const app: Express = express();
 
 if (config.env !== 'test') {

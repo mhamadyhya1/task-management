@@ -138,3 +138,341 @@ info: task: [object Object]
 info: tasks get: [object Object]
 info: task: [object Object]
 info: task: [object Object]
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 200 - 8.932 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 200 - 1.017 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 200 - 8.146 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 200 - 8.036 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 200 - 6.725 ms
+[32minfo[39m: POST /v1/auth/login 200 - 74.660 ms
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 8.333 ms - message: Forbidden
+[32minfo[39m: GET /v1/users/652d18c2ee70900136c4658c 200 - 7.811 ms
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 7.705 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 3.835 ms - message: Forbidden
+[32minfo[39m: POST /v1/auth/login 200 - 39.220 ms
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 7.666 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 5.595 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 4.664 ms - message: Forbidden
+[32minfo[39m: POST /v1/auth/login 200 - 29.709 ms
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18c2ee70900136c4658c 403 - 5.175 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18c2ee70900136c4658c 403 - 5.128 ms - message: Forbidden
+[32minfo[39m: GET /v1/users/652c281c5dce7e258f24d0a8 200 - 8.415 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: POST /v1/auth/login 200 - 75.292 ms
+[32minfo[39m: GET /v1/users/652c281c5dce7e258f24d0a8 304 - 15.216 ms
+[32minfo[39m: GET /v1/users/652c281c5dce7e258f24d0a8 304 - 8.048 ms
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652c29696a07df8faab32ede 403 - 5.933 ms - message: Forbidden
+[32minfo[39m: PATCH /v1/users/652c281c5dce7e258f24d0a8 200 - 50.143 ms
+[32minfo[39m: PATCH /v1/users/652c281c5dce7e258f24d0a8 200 - 41.270 ms
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: PATCH /v1/users/652c29696a07df8faab32ede 403 - 8.858 ms - message: Forbidden
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: POST /v1/auth/login 200 - 74.270 ms
+[32minfo[39m: DELETE /v1/users/652d18c2ee70900136c4658c 204 - 16.345 ms
+[31merror[39m: Error: Please authenticate
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:7:23
+    at allFailed (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:110:18)
+    at attempt (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:183:28)
+    at strategy.fail (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:305:9)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:113:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:15:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: DELETE /v1/users/652c29696a07df8faab32ede 401 - 7.287 ms - message: Please authenticate
+[31merror[39m: Error: Incorrect email or password
+    at Module.loginUserWithEmailAndPassword (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.service.js:17:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.controller.js:13:18
+[31merror[39m: POST /v1/auth/login 401 - 5.629 ms - message: Incorrect email or password
+[32minfo[39m: POST /v1/auth/login 200 - 42.372 ms
+[32minfo[39m: GET /v1/docs/ 304 - 3.670 ms
+[32minfo[39m: DELETE /v1/users/652c29696a07df8faab32ede - - - ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 2.868 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.561 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 2.957 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 2.878 ms
+[32minfo[39m: GET /v1/docs/favicon-32x32.png 200 - 4.974 ms
+[32minfo[39m: POST /v1/auth/login 200 - 41.900 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: DELETE /v1/users/652c29696a07df8faab32ede 204 - 29.496 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[31merror[39m: Error: Forbidden
+    at addUserIdToParams (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/user/user.middleware.js:8:15)
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:24:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: PATCH /v1/users/652d69b99bf63f46574d47be 403 - 30.801 ms - message: Forbidden
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[31merror[39m: Error: Forbidden , for authenticated users only
+    at addUserIdToParams (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/user/user.middleware.js:8:15)
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:24:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: DELETE /v1/users/652d69b99bf63f46574d47be 403 - 26.694 ms - message: Forbidden , for authenticated users only
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 6.667 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 1.916 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 4.115 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 2.044 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 200 - 2.169 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 5.531 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 1.996 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 2.297 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 1.671 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 200 - 1.881 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 7.441 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 2.246 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 2.435 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 1.915 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 200 - 1.809 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[31merror[39m: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:805:11)
+    at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:780:11)
+[31merror[39m: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:805:11)
+    at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:780:11)
+[31merror[39m: MongooseServerSelectionError: getaddrinfo ENOTFOUND db
+    at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:805:11)
+    at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:780:11)
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 12.200 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 200 - 1.252 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 200 - 6.938 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 200 - 4.909 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 200 - 4.806 ms
+[32minfo[39m: GET /v1/docs/favicon-32x32.png 200 - 1.865 ms
+[32minfo[39m: POST /v1/auth/register 201 - 94.703 ms
+[32minfo[39m: POST /v1/auth/login 200 - 46.389 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 7.203 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 1.958 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 1.670 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.424 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 1.369 ms
+[32minfo[39m: GET /v1/docs/favicon-32x32.png 304 - 0.396 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 11.735 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 2.744 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 2.247 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.594 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 0.511 ms
+[32minfo[39m: GET /v1/docs/favicon-32x32.png 304 - 2.827 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 6.070 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 3.823 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 2.572 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.710 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 3.988 ms
+[32minfo[39m: GET /v1/docs/ 304 - 1.330 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 1.046 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 1.811 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 1.667 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.759 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 4.893 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 1.740 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 1.539 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.532 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 1.623 ms
+[32minfo[39m: GET /v1/docs/favicon-32x32.png 304 - 0.500 ms
+[32minfo[39m: GET /v1/docs/ 304 - 0.935 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 0.537 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 0.532 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.263 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 0.976 ms
+[32minfo[39m: GET /v1/docs/favicon-32x32.png 304 - 0.384 ms
+[31merror[39m: Error: Email already taken
+    at Module.registerUser (file:///app/dist/modules/user/user.service.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///app/dist/modules/auth/auth.controller.js:7:18
+[31merror[39m: POST /v1/auth/register 400 - 44.302 ms - message: Email already taken
+[32minfo[39m: POST /v1/auth/register 201 - 76.913 ms
+[32minfo[39m: GET /v1/docs/ 304 - 2.940 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 1.518 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 1.728 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 1.907 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.449 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 3.553 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 1.615 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 1.085 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 1.287 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.776 ms
+[32minfo[39m: GET /v1/docs/ 304 - 1.134 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 0.570 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 1.501 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 304 - 0.434 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 0.472 ms
+[31merror[39m: Error: Please authenticate
+    at file:///app/dist/modules/auth/auth.middleware.js:7:23
+    at allFailed (/app/node_modules/passport/lib/middleware/authenticate.js:110:18)
+    at attempt (/app/node_modules/passport/lib/middleware/authenticate.js:183:28)
+    at strategy.fail (/app/node_modules/passport/lib/middleware/authenticate.js:305:9)
+    at JwtStrategy.authenticate (/app/node_modules/passport-jwt/lib/strategy.js:96:21)
+    at attempt (/app/node_modules/passport/lib/middleware/authenticate.js:369:16)
+    at authenticate (/app/node_modules/passport/lib/middleware/authenticate.js:370:7)
+    at file:///app/dist/modules/auth/auth.middleware.js:22:107
+    at new Promise (<anonymous>)
+    at file:///app/dist/modules/auth/auth.middleware.js:21:73
+[31merror[39m: POST /v1/tasks 401 - 33.164 ms - message: Please authenticate
+[32minfo[39m: POST /v1/auth/login 200 - 85.759 ms
+[32minfo[39m: POST /v1/tasks 201 - 26.692 ms

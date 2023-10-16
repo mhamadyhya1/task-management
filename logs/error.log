@@ -12,3 +12,127 @@
     at Function.listen (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/application.js:618:24)
     at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/index.js:8:18
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 8.333 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 7.705 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 3.835 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 7.666 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 5.595 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 4.664 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18c2ee70900136c4658c 403 - 5.175 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18c2ee70900136c4658c 403 - 5.128 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652c29696a07df8faab32ede 403 - 5.933 ms - message: Forbidden
+[31merror[39m: Error: Forbidden
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:16:27
+    at strategy.success (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:222:18)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:115:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: PATCH /v1/users/652c29696a07df8faab32ede 403 - 8.858 ms - message: Forbidden
+[31merror[39m: Error: Please authenticate
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:7:23
+    at allFailed (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:110:18)
+    at attempt (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:183:28)
+    at strategy.fail (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport/lib/middleware/authenticate.js:305:9)
+    at verified (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/passport-jwt/lib/strategy.js:113:41)
+    at JwtStrategy._verify (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/passport.js:15:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: DELETE /v1/users/652c29696a07df8faab32ede 401 - 7.287 ms - message: Please authenticate
+[31merror[39m: Error: Incorrect email or password
+    at Module.loginUserWithEmailAndPassword (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.service.js:17:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.controller.js:13:18
+[31merror[39m: POST /v1/auth/login 401 - 5.629 ms - message: Incorrect email or password
+[31merror[39m: Error: Forbidden
+    at addUserIdToParams (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/user/user.middleware.js:8:15)
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:24:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: PATCH /v1/users/652d69b99bf63f46574d47be 403 - 30.801 ms - message: Forbidden
+[31merror[39m: Error: Forbidden , for authenticated users only
+    at addUserIdToParams (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/user/user.middleware.js:8:15)
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:24:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: DELETE /v1/users/652d69b99bf63f46574d47be 403 - 26.694 ms - message: Forbidden , for authenticated users only
+[31merror[39m: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:805:11)
+    at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:780:11)
+[31merror[39m: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:805:11)
+    at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:780:11)
+[31merror[39m: MongooseServerSelectionError: getaddrinfo ENOTFOUND db
+    at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:805:11)
+    at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:780:11)
+[31merror[39m: Error: Email already taken
+    at Module.registerUser (file:///app/dist/modules/user/user.service.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///app/dist/modules/auth/auth.controller.js:7:18
+[31merror[39m: POST /v1/auth/register 400 - 44.302 ms - message: Email already taken
+[31merror[39m: Error: Please authenticate
+    at file:///app/dist/modules/auth/auth.middleware.js:7:23
+    at allFailed (/app/node_modules/passport/lib/middleware/authenticate.js:110:18)
+    at attempt (/app/node_modules/passport/lib/middleware/authenticate.js:183:28)
+    at strategy.fail (/app/node_modules/passport/lib/middleware/authenticate.js:305:9)
+    at JwtStrategy.authenticate (/app/node_modules/passport-jwt/lib/strategy.js:96:21)
+    at attempt (/app/node_modules/passport/lib/middleware/authenticate.js:369:16)
+    at authenticate (/app/node_modules/passport/lib/middleware/authenticate.js:370:7)
+    at file:///app/dist/modules/auth/auth.middleware.js:22:107
+    at new Promise (<anonymous>)
+    at file:///app/dist/modules/auth/auth.middleware.js:21:73
+[31merror[39m: POST /v1/tasks 401 - 33.164 ms - message: Please authenticate
