@@ -136,3 +136,14 @@
     at new Promise (<anonymous>)
     at file:///app/dist/modules/auth/auth.middleware.js:21:73
 [31merror[39m: POST /v1/tasks 401 - 33.164 ms - message: Please authenticate
+error: ::1 - GET /v1/docs/ 404 - 5.298 ms - message: Not found
+error: ::1 - GET /favicon.ico 404 - 1.655 ms - message: Not found
+error: ::1 - GET /v1/docs/ 404 - 1.377 ms - message: Not found
+error: ::1 - GET /v1/docs/ 404 - 0.709 ms - message: Not found
+error: ::1 - GET /v1/docs/ 404 - 0.613 ms - message: Not found
+error: ::1 - GET /auth/login 404 - 20.799 ms - message: Not found
+error: ::1 - GET /v1/auth/login 404 - 3.806 ms - message: Not found
+error: ::1 - GET /v1/auth/login 404 - 3.246 ms - message: Not found
+error: ::1 - GET /v1/auth/login 404 - 3.148 ms - message: Not found
+error: ::1 - POST /auth/login 404 - 2.000 ms - message: Not found
+error: ::1 - POST /auth/login 404 - 1.757 ms - message: Not found

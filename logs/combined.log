@@ -565,3 +565,17 @@ info: task: [object Object]
 info: task: [object Object]
 info: task: [object Object]
 info: task: [object Object]
+info: Connected to MongoDB
+info: Listening to port 8080
+error: ::1 - GET /v1/docs/ 404 - 5.298 ms - message: Not found
+error: ::1 - GET /favicon.ico 404 - 1.655 ms - message: Not found
+error: ::1 - GET /v1/docs/ 404 - 1.377 ms - message: Not found
+error: ::1 - GET /v1/docs/ 404 - 0.709 ms - message: Not found
+error: ::1 - GET /v1/docs/ 404 - 0.613 ms - message: Not found
+error: ::1 - GET /auth/login 404 - 20.799 ms - message: Not found
+error: ::1 - GET /v1/auth/login 404 - 3.806 ms - message: Not found
+error: ::1 - GET /v1/auth/login 404 - 3.246 ms - message: Not found
+error: ::1 - GET /v1/auth/login 404 - 3.148 ms - message: Not found
+error: ::1 - POST /auth/login 404 - 2.000 ms - message: Not found
+error: ::1 - POST /auth/login 404 - 1.757 ms - message: Not found
+info: ::1 - POST /v1/auth/login 200 - 59.920 ms
