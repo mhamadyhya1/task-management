@@ -1,5 +1,5 @@
 const adminOnlyRoles = ['create_user','delete_task' , 'get_users'];
-const regularRoles = ['create_task', 'list_tasks', 'get_tasks','get_task','delete_user', 'update_task', 'view_user', 'update_user'];
+const regularRoles = ['create_task', 'list_tasks', 'get_user','get_tasks','get_task','delete_user', 'update_task', 'view_user', 'update_user'];
 
 const admiinRoles = adminOnlyRoles.concat(regularRoles);
 

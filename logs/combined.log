@@ -624,3 +624,173 @@ info: ::1 - POST /v1/auth/login 200 - 59.920 ms
 [32minfo[39m: GET /v1/tasks?limit=10&page=1 304 - 6.640 ms
 [32minfo[39m: cached: {"results":[{"title":"fake content title","description":"fake description","assignedTo":null,"dueDate":"2021-05-05T14:48:00.000Z","assignee":{"email":"fake@example.com","id":"652c281c5dce7e258f24d0a8"},"status":"To Do","priority":"low","id":"652c29d16a07df8faab32ee2"},{"title":"fake title with 2 regulars","description":"fake description","assignedTo":null,"dueDate":"2021-05-05T14:48:00.000Z","assignee":{"email":"fake2@example.com","id":"652d18bbee70900136c46588"},"status":"To Do","priority":"low","id":"652d1907ee70900136c46593"},{"title":"fake title","description":"fake description","assignedTo":{"name":"fake name","id":"652d18bbee70900136c46588"},"dueDate":"2021-05-05T14:48:00.000Z","assignee":{"email":"fake@example.com","id":"652c281c5dce7e258f24d0a8"},"status":"To Do","priority":"low","id":"652da1845ebc227f5dfb9fa9"},{"title":"fake title","description":"fake description","assignedTo":{"name":"fake name","id":"652d18bbee70900136c46588"},"dueDate":"2021-05-05T14:48:00.000Z","assignee":{"email":"fake@example.com","id":"652c281c5dce7e258f24d0a8"},"status":"To Do","priority":"low","id":"652da1cde9f80fd31dba619b"}],"page":1,"limit":10,"totalPages":1,"totalResults":4}
 [32minfo[39m: GET /v1/tasks?limit=10&page=1 304 - 9.894 ms
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 404 - 3.374 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 404 - 1.292 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 1.441 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 1.277 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 1.042 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 2.493 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 1.110 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 1.180 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 1.676 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 1.181 ms - message: Not found
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 1.922 ms - message: Not found
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[31merror[39m: Error: Not found
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/app.js:45:10
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:328:13)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:280:10)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+    at /Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:646:15
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/index.js:265:14)
+[31merror[39m: GET /v1/users/652c281c5dce7e258f24d0a8 404 - 9.682 ms - message: Not found
+[32minfo[39m: PATCH /v1/users/652c281c5dce7e258f24d0a8 200 - 84.236 ms
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/users/652c281c5dce7e258f24d0a8 200 - 29.374 ms
+[31merror[39m: Error: Forbidden , for authenticated users only
+    at addUserIdToParams (file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/user/user.middleware.js:8:15)
+    at Layer.handle [as handle_request] (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/mohammadyehya/Projects Practice/task management/node-express-mongoose-typescript-boilerplate/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/mohammadyehya/Projects%20Practice/task%20management/node-express-mongoose-typescript-boilerplate/dist/modules/auth/auth.middleware.js:24:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[31merror[39m: GET /v1/users/652d18bbee70900136c46588 403 - 6.519 ms - message: Forbidden , for authenticated users only
+[32minfo[39m: Connected to MongoDB
+[32minfo[39m: Listening to port 8080
+[32minfo[39m: GET /v1/docs/ 304 - 9.448 ms
+[32minfo[39m: GET /v1/docs/swagger-ui.css 304 - 3.069 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-standalone-preset.js 304 - 2.271 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-bundle.js 304 - 2.977 ms
+[32minfo[39m: GET /v1/docs/swagger-ui-init.js 200 - 1.621 ms
