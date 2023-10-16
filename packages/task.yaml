@@ -63,6 +63,73 @@ paths:
           $ref: '#/components/responses/Unauthorized'
         '403':
           $ref: '#/components/responses/Forbidden'
+    get:
+      summary: Get all Tasks
+      description: Admins will retrieve all tasks created with assignee and assignedTo name. Users will retrieve only their own tasks that are assignee or assignedTo
+      tags: [Task]
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: query
+          name: title
+          schema:
+            type: string
+          description: Task title
+        - in: query
+          name: status
+          schema:
+            type: string
+          description: Task Status
+          enum: ['To Do', 'In Progress', 'Done' , 'In Review','Recheck','Move To QA' ,'Closed']
+        - in: query
+          name: priority
+          schema:
+            type: string
+          description: Task Priority
+          enum: ['low','high','medium']
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            minimum: 1
+          default: 10
+          description: Maximum number of Tasks
+        - in: query
+          name: page
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+          description: Page number
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Task'
+                  page:
+                    type: integer
+                    example: 1
+                  limit:
+                    type: integer
+                    example: 10
+                  totalPages:
+                    type: integer
+                    example: 1
+                  totalResults:
+                    type: integer
+                    example: 1
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  
   /tasks/{id}:
     patch:
       summary: Update a Task

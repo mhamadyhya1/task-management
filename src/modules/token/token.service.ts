@@ -8,8 +8,6 @@ import ApiError from '../errors/ApiError';
 import tokenTypes from './token.types';
 import { AccessAndRefreshTokens, ITokenDoc } from './token.interfaces';
 import { IUserDoc } from '../user/user.interfaces';
-import { userService } from '../user';
-
 /**
  * Generate token
  * @param {mongoose.Types.ObjectId} userId
@@ -99,37 +97,5 @@ export const generateAuthTokens = async (user: IUserDoc): Promise<AccessAndRefre
       token: accessToken,
       expires: accessTokenExpires.toDate(),
     },
-    refresh: {
-      token: refreshToken,
-      expires: refreshTokenExpires.toDate(),
-    },
   };
-};
-
-/**
- * Generate reset password token
- * @param {string} email
- * @returns {Promise<string>}
- */
-export const generateResetPasswordToken = async (email: string): Promise<string> => {
-  const user = await userService.getUserByEmail(email);
-  if (!user) {
-    throw new ApiError(httpStatus.NO_CONTENT, '');
-  }
-  const expires = moment().add(config.jwt.resetPasswordExpirationMinutes, 'minutes');
-  const resetPasswordToken = generateToken(user.id, expires, tokenTypes.RESET_PASSWORD);
-  await saveToken(resetPasswordToken, user.id, expires, tokenTypes.RESET_PASSWORD);
-  return resetPasswordToken;
-};
-
-/**
- * Generate verify email token
- * @param {IUserDoc} user
- * @returns {Promise<string>}
- */
-export const generateVerifyEmailToken = async (user: IUserDoc): Promise<string> => {
-  const expires = moment().add(config.jwt.verifyEmailExpirationMinutes, 'minutes');
-  const verifyEmailToken = generateToken(user.id, expires, tokenTypes.VERIFY_EMAIL);
-  await saveToken(verifyEmailToken, user.id, expires, tokenTypes.VERIFY_EMAIL);
-  return verifyEmailToken;
 };

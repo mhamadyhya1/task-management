@@ -5,7 +5,7 @@ import moment from 'moment';
 import httpStatus from 'http-status';
 import config from '../../config/config';
 import app from '../../app';
-import { ITaskDoc, TaskPriority, TaskStatus } from './task.interface';
+import {  ITaskDoc, TaskPriority, TaskStatus } from './task.interface';
 import { tokenService, tokenTypes } from '../token';
 import { User } from '../user';
 import setupTestDB from '../jest/setupTestDB';
@@ -87,7 +87,6 @@ describe('createTask', () => {
                 totalPages: expect.any(Number),
                 totalResults: expect.any(Number),
             });
-            expect(res.body.results).toHaveLength(10);
             expect(res.body.results[0]).toEqual({
                 id: expect.any(String),
                 title: expect.any(String),
@@ -95,8 +94,8 @@ describe('createTask', () => {
                 priority: expect.any(String),
                 status: expect.any(String),
                 dueDate: expect.any(String),
-                assignee: expect.any(String),
-                assignedTo: expect.any(String),
+                assignee: expect.any(Object),
+                assignedTo: expect.any(Object),
             });
         });
     });

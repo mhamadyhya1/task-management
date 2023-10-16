@@ -31,12 +31,12 @@
                   description: At least one number and one letter
                 role:
                    type: string
-                   enum: [user, admin]
+                   enum: [regular, admin]
               example:
                 name: fake name
                 email: fake@example.com
                 password: password1
-                role: user
+                role: regular
       responses:
         "201":
           description: Created

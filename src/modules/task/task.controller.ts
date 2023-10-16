@@ -30,7 +30,7 @@ export const getTask = catchAsync(async (req: Request, res: Response) => {
 });
 
 export const getTasks = catchAsync(async (req: Request, res: Response) => {
-  const filter = pick(req.query, ['title', 'prirority', 'status']);
+  const filter = pick(req.query, ['title', 'priority', 'status']);
   const options: IOptions = pick(req.query, ['limit', 'page']);
   const result = await TaskService.queryTasks(filter, options,req.user);
   res.status(httpStatus.OK).send(result);
