@@ -17,6 +17,7 @@ describe('createTask', () => {
     let adminAccessToken: string;
     let userOne: any;
     let admin: any;
+    let taskId: mongoose.Types.ObjectId | string = '';
 
     beforeEach(async () => {
         userOne = {
@@ -59,6 +60,7 @@ describe('createTask', () => {
                 .set('Authorization', `Bearer ${adminAccessToken}`)
                 .send(newTask)
                 .expect(httpStatus.CREATED);
+            taskId = res.body.id;
             logger.info('task: '+res)
             expect(res.body).toEqual({
                 id: expect.any(String),
@@ -79,7 +81,6 @@ describe('createTask', () => {
                 .set('Authorization', `Bearer ${adminAccessToken}`)
                 .send()
                 .expect(httpStatus.OK);
-            logger.info('tasks get: '+res)
             expect(res.body).toEqual({
                 results: expect.arrayContaining<ITaskDoc>([]),
                 page: 1,
@@ -97,6 +98,15 @@ describe('createTask', () => {
                 assignee: expect.any(Object),
                 assignedTo: expect.any(Object),
             });
+        });
+    });
+    describe('DELETE /v1/tasks', () => {
+        test('should return 204 if task delete is successful', async () => {
+            await request(app)
+                .delete('/v1/tasks/'+ taskId)
+                .set('Authorization', `Bearer ${adminAccessToken}`)
+                .send()
+                .expect(httpStatus.NO_CONTENT);
         });
     });
 });
