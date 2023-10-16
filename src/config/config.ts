@@ -35,12 +35,17 @@ const config = {
   jwt: {
     secret: envVars.JWT_SECRET,
     accessExpirationMinutes: envVars.JWT_ACCESS_EXPIRATION_MINUTES,
+    refreshExpirationDays: envVars.JWT_REFRESH_EXPIRATION_DAYS,
     cookieOptions: {
       httpOnly: true,
       secure: envVars.NODE_ENV === 'production',
       signed: true,
     },
   },
+  redis:{
+    port:envVars.REDIS_PORT,
+    url:envVars.REDIS_URL
+  }
 };
 
 export default config;

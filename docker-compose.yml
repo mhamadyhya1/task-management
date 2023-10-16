@@ -14,7 +14,8 @@ services:
       JWT_SECRET: thisisasamplesecret
       JWT_ACCESS_EXPIRATION_MINUTES: 30
       JWT_REFRESH_EXPIRATION_DAYS: 3
-
+      REDIS_PORT: 6379
+      REDIS_URL: redis
     volumes:
       - ./:/app
       - /app/node_modules
@@ -29,8 +30,8 @@ services:
     logging:
       driver: json-file
       options:
-        max-size: "10m"  # Rotate log file when it reaches 10MB
-        max-file: "3"     # Keep 3 rotated log files
+        max-size: "10m"
+        max-file: "3"
     restart: unless-stopped
   redis:
     image: "redis:latest"
@@ -50,8 +51,6 @@ services:
       - "8081:8081"
     environment:
       ME_CONFIG_MONGODB_SERVER: mongodb
-      ME_CONFIG_MONGODB_AUTH_USERNAME: admin
-      ME_CONFIG_MONGODB_AUTH_PASSWORD: pass
     restart: unless-stopped
 volumes:
   redis_data:

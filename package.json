@@ -17,11 +17,9 @@
     "compile:watch": "tsc --build --watch",
     "pre:dev": "cross-env NODE_ENV=development nodemon --experimental-modules --es-module-specifier-resolution=node dist/index.js",
     "dev": "concurrently --kill-others \"yarn compile:watch\" \"yarn pre:dev\"",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -i --colors --verbose --detectOpenHandles",
-    "test:ts": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -i --colors --verbose --detectOpenHandles -- 'ts$'",
-    "test:js": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -i --colors --verbose --detectOpenHandles -- 'js$'",
-    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -i --watchAll",
-    "docker:dev": "docker-compose -f docker-compose.yml -f up",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -i --colors --verbose",
+    "docker:compose": "docker-compose up --build",
+    "dockeer:down": "docker-compose down",
     "commit": "git add -A && cz"
   },
   "devDependencies": {

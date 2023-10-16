@@ -1,6 +1,7 @@
 import Redis from 'ioredis';
+import config from '../../config/config';
 
 export const redisClient = new Redis({
-  host: 'redis',
-  port: 6379,
+  host: config.redis.url,
+  port: config.redis.port,
 });

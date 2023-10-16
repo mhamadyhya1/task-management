@@ -7,6 +7,7 @@ import { NewCreatedTask, UpdateTaskBody, ITaskDoc } from './task.interface';
 import { IUserDoc } from '../user/user.interfaces';
 import { User } from '../user';
 import { redisClient } from '../utils/redisCache';
+import { logger } from '../logger';
 
 /**
  * check if Task exists , if not throw not found error
@@ -46,6 +47,7 @@ export const queryTasks = async (
   }
   const cachedData = await redisClient.get('cached_tasks_document');
   if (cachedData) {
+    logger.info('cached: '+cachedData)
     return JSON.parse(cachedData);
   }
   let updatedOptions:IOptions = { ...options, populate: [{path:'assignee','select':'email'},{path:'assignedTo','select':'name'}] };
