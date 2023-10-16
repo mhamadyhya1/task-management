@@ -16,7 +16,7 @@ import { User } from '../user';
 export const createTask = async (TaskBody: NewCreatedTask): Promise<ITaskDoc> => {
   const checkAssignedToExists = await User.findById(TaskBody.assignedTo);
   if (!checkAssignedToExists) {
-    throw new ApiError(httpStatus.NOT_FOUND, 'assignedTo not found');
+    throw new ApiError(httpStatus.NOT_FOUND, 'AssignedTo not found');
   } else {
     return Task.create(TaskBody);
   }
@@ -52,7 +52,7 @@ export const queryTasks = async (
  * @returns {Promise<ITaskDoc | null>}
  */
 export const getTaskById = async (id: mongoose.Types.ObjectId, user?: IUserDoc | null): Promise<ITaskDoc | null> => {
-  if (!user) return Task.findById(id);
+  if (!user) return null;
   return user.role === 'regular'
     ? Task.findOne({
         _id: id,
@@ -84,7 +84,6 @@ export const updateTaskById = async (
 
 /**
  * Delete Task by id
- * subtract count number of newsletter's Task -1
  * @param {mongoose.Types.ObjectId} TaskId
  * @param {IUserDoc | null} user
  * @returns {Promise<ITaskDoc | null>}

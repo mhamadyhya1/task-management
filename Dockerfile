@@ -1,26 +1,19 @@
-# development stage
-FROM node:14-alpine as base
+# NodeJS Version 16
+FROM node:18.17.1-bullseye-slim
 
-WORKDIR /usr/src/app
+# Copy Dir
+COPY . ./app
 
-COPY package.json yarn.lock tsconfig.json ecosystem.config.json ./
+# Work to Dir
+WORKDIR /app
 
-COPY ./src ./src
+# Install Node Package
+RUN yarn install
 
-RUN ls -a
+# Set Env
+ENV NODE_ENV development
 
-RUN yarn install --pure-lockfile && yarn compile
+EXPOSE 6080
 
-# production stage
-
-FROM base as production
-
-WORKDIR /usr/prod/app
-
-ENV NODE_ENV=production
-
-COPY package.json yarn.lock ecosystem.config.json ./
-
-RUN yarn install --production --pure-lockfile
-
-COPY --from=base /usr/src/app/dist ./dist
+# Cmd script
+CMD ["yarn", "run", "dev"]
