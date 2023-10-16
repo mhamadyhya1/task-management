@@ -29,4 +29,5 @@ export interface TokenPayload {
 
 export interface AccessAndRefreshTokens {
   access: TokenPayload;
+  refresh: TokenPayload;
 }

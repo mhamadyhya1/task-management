@@ -24,7 +24,7 @@ describe('createTask', () => {
             _id: new mongoose.Types.ObjectId(),
             name: faker.name.firstName(),
             email: faker.internet.email().toLowerCase(),
-            password: 'password123',
+            password: 'password123?!',
             role: 'regular',
             isEmailVerified: false,
         };
@@ -33,7 +33,7 @@ describe('createTask', () => {
             _id: new mongoose.Types.ObjectId(),
             name: faker.name.findName(),
             email: faker.internet.email().toLowerCase(),
-            password: 'adminPassword123', 
+            password: 'adminPassword123?!', 
             role: 'admin',
             isEmailVerified: false,
         };
