@@ -12,6 +12,7 @@ Here're some of the project's best features:
 *   Swagger for API Documentation
 *   Api Audit log files integrated
 *   rate limit for apis
+*   Uni tests using jest and supertest
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -50,9 +51,11 @@ yarn run docker:compose
 ```
 localhost:PORT/v1/docs
 ```
+<p>7. Run Tests</p>
 
-  
-  
+```
+yarn run test
+```
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
