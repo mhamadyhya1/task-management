@@ -19,7 +19,7 @@
     "dev": "concurrently --kill-others \"yarn compile:watch\" \"yarn pre:dev\"",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest -i --colors --verbose",
     "docker:compose": "docker-compose up --build",
-    "dockeer:down": "docker-compose down",
+    "docker:down": "docker-compose down",
     "commit": "git add -A && cz"
   },
   "devDependencies": {
