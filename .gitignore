@@ -140,3 +140,5 @@ dist
 
 logs/combined.log
 logs/error.log
+logs/combined.log
+logs/error.log
